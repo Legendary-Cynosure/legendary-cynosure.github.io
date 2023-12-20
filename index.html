@@ -1,0 +1,446 @@
+<!--   
+  index.html
+  Portfolio
+  Created by Alexander Le on 12/2/21.
+
+  Copyright © 2021 Alexander Le. All rights reserved. 
+
+  Top-level HTML file for for my personal site. 
+
+  Thank you for visiting!
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Alexander's Personal Site
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+
+<!DOCTYPE html>
+<html> 
+  <head>
+    <!-- Scale to any viewport -->
+    <!-- <meta name = "viewport" content = "width = device-width, initial scale = 1.0"> -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- This is the head element, this mostly shouldn't change -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <!-- Import fonts first -->
+    <link rel="stylesheet" href="Css/Fonts.css"> 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138626637-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-138626637-1');
+    </script>
+    <!-- Meta Data -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,user-scalable=no,maximum-scale=1"
+    />
+    <meta name="keywords" content="Alexander Le, Alexander Le">
+    <meta name="author" content="Alexander Le">
+    <!-- Title -->
+    <title>Alexander Le</title>
+    <meta 
+      name="description" 
+      content=
+      "Alexander Le is an incredibly passionate student persuing degress in CS and Physics."
+    >
+    <!-- The on the tab Icon -->
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="./Assets/favi.png"
+    />
+
+    <!-- Css -->
+    <link rel="stylesheet" href="Css/Main.css"> 
+    <link rel="stylesheet" href="Css/Loader.css"> 
+    <link rel="stylesheet" href="Css/Intro.css"> 
+    <link rel="stylesheet" href="Css/Header.css"> 
+    <link rel="stylesheet" href="Css/About.css"> 
+    <link rel="stylesheet" href="Css/Experience.css"> 
+    <link rel="stylesheet" href="Css/Education.css"> 
+    <link rel="stylesheet" href="Css/Awards.css"> 
+    <link rel="stylesheet" href="Css/Projects.css"> 
+    <link rel="stylesheet" href="Css/Organizations.css"> 
+    <link rel="stylesheet" href="Css/Contact.css"> 
+    <link rel="stylesheet" href="Css/Footer.css">
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Polyfills, plugins, libraries, etc. -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="ExternalModules/jquery/dist/jquery.min.js"></script>
+    <script src="ExternalModules/anime/lib/anime.min.js"></script>
+    <script src="ExternalModules/SmoothScroll.min.js"></script>
+    <script src="ExternalModules/Inview/jquery.inview.min.js"></script>
+    <script src="ExternalModules/Parallax/rellax.min.js"></script>
+    <script src="ExternalModules/Masonry/dist/masonry.pkgd.min.js"></script>
+
+  </head>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- Body element is where everything goes -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <body>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- This is the loader element, prolly shouldn't change -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section id="loader">
+      <img id="loader-image" src="./Assets/logo.png"></img>
+      <div id="greeter"> Initializing ࿊ ࿋ ࿌</div>
+      <div id="loader-counter">0%</div>
+    </section>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- This is the Intro Node, this could change but who knows -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section id="intro" >
+      <!-- add the mask and the background (absolute) -->
+      <div id="intro-background" data-rellax-speed="-6" class="rellax"></div>
+      <div id="intro-mask"></div>
+      <!-- add the tile -->
+      <h1 id="intro-title">
+        <span id="text-wrapper">
+          <span id="intro-line"></span>
+          <span id="intro-letters">Alexander Le</span>
+        </span>
+      </h1>
+      <h3 id="intro-description"> I'm incredibly passionate about CS + Design
+      <br>Student - Technologist - Aspiring Data Scientist
+      </h3>
+    </section>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- End of intro, Header node starts here -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <section id="header">
+      <a data-scroll="" href="#intro"><img id="logo" src="./Assets/zen gold.png"></img></a>
+      <!-- mobile navigator icon (hamburger icon) -->
+      <img id="responsive-icon" src="./Assets/ResponsiveIcon.png" ></img>
+      <div id="navigation"> <!-- the navigation links on desktop -->
+        <a data-scroll="" href="#about" class="link about" >about</a>
+        <a data-scroll="" href="#experience" class="link experience">experience</a>
+        <a data-scroll="" href="#education" class="link education">education</a>
+        <a data-scroll="" href="#awards" class="link awards">awards</a>
+        <a data-scroll="" href="#projects" class="link projects">projects</a>
+        <a data-scroll="" href="#organizations" class="link organizations">organizations</a>
+        <a data-scroll="" href="#contact" class="link contact">contact</a>
+      </div>
+      <div id="mobile-navigation"> 
+        <img id="mobile-navigation-exit" src="./Assets/X.jpg" ></img>
+        <a data-scroll="" href="#about" class="mobile-link about">about</a>
+        <a data-scroll="" href="#experience" class="link experience">experience</a>
+        <a data-scroll="" href="#education" class="mobile-link education">education</a>
+        <a data-scroll="" href="#awards" class="mobile-link awards">awards</a>
+        <a data-scroll="" href="#projects" class="mobile-link projects">projects</a>
+        <a data-scroll="" href="#organizations" class="mobile-link organizations">organizations</a>
+        <a data-scroll="" href="#contact" class="mobile-link contact">contact</a>
+      </div>
+    </section>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- About Page starts here -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section id="about">
+      <div class="parallax-letter rellax" id="p-letter-a" data-rellax-speed="3">0 1 0 0 0 0 0 1</div> <br>
+      <div class="parallax-letter rellax" id="p-letter-l" data-rellax-speed="5">0 1 1 0 1 1 0 0</div> <br>
+      <div class="parallax-letter rellax" id="p-letter-e" data-rellax-speed="6">0 1 1 0 0 1 0 1</div> <br>
+      <div class="parallax-letter rellax" id="p-letter-x" data-rellax-speed="5">0 1 1 1 1 0 0 0</div> <br>
+      <h2 id="about-title"> About Me </h2>
+      <!-- To change the picture just change the src -->
+      <img id="profile" src="./Assets/me.png"></img>
+      <!-- you can change the text too -->
+      <p id="bio">
+        Hi! I’m currently a junior college student planning on transferring to a university in 2023. Maybe UCLA or UC Berkeley, I've toured both on Minecraft and I really admire the faculty and drive at both schools. I am passionate about machine learning and data science, specifically the massive potential to develop technologies at the intersection of human-computer interaction. I am an incoming data science intern at Intel corporation this summer and I’m super excited! Other than that, I recently joined NASA’s NCAS Aerospace Scholar program. Previous experiences include working on a team with IBM to promote digital access and literacy to underserved communities across Africa and Inner Mongolia. I also led ACM at Los Rios as the Vice President in 2022 and founded CityHacks, the college district’s first collegiate hackathon.
+      </p>
+      <div class="parallax-letter rellax" id="p-letter-e" data-rellax-speed="-4">𓅕</div>
+      <div class="parallax-letter rellax" id="p-letter-x" data-rellax-speed="-4.5"> </div>
+      <div id="button-container">
+        <a data-scroll="" href="https://linkedin.com/in/physicist86" class="button" >
+          Learn More
+        </a>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- To Change the Resume pdf, just change the 'href' to the new path -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <a class="button">
+          Résumé
+        </a>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Experience starts here -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section id="experience">
+      <h2> Experience </h2>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Education starts here -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section id="education">
+      <h2> Education </h2>
+      <!---
+      <section class="school" id="flc">
+        <img class="rellax" data-rellax-speed="1" src="./Assets/flc.png"></img>
+        <div id="title"> Folsom Lake College </div>
+        <div class="animate-left" id="container">
+          <div> <b> Years attended:</b> 2019-present </div>
+          <div> <b> GPA (weighted):</b> 4.00 </div>
+          <div> <b> GPA (unweighted):</b> 3.98 </div>
+          <div> Relevant Coursework: Integral and Differential Calculus // 
+          Artificial Intelligence & Data Science // <br> Data Structures //
+          Discrete Structures // Calculus II // Honors Chemistry </div>
+        </div>
+
+      -->
+      </section>
+    <section id="awards">
+      <h2> Awards </h2>
+      <!---
+      <img id="trophy-p" class="rellax" data-rellax-speed="-2" src="./Assets/Trophy.png">
+      <div id="container"> 
+        <div id="award">
+          <img src="./Assets/FBLA.png" style="top:0" class="animate-right rellax" data-rellax-speed="-0.2"></img>
+          <section class="animate-left">
+            <div id="award-title" >National Leadership Conference Finalist</div>
+            (Baltimore, MD) second place winner at FBLA Colorado State Leadership Conference in Financial Math event, April 2018
+          </section>
+        </div>
+        <div id="award">
+          <img src="./Assets/CoMath.png" style="bottom:0" class="animate-right rellax" data-rellax-speed="0.2"></img>
+          <section class="animate-left">
+            <div id="award-title">Colorado American Regions Mathematics League 3rd Place Nationally</div>
+            Selected as Colorado American Regions Mathematics League (ARML) Team Member, placing 3rd nationally in the division, <a href="http://www.coloradomath.org/arml.htm" target="_blank">2018</a>
+          </section>
+        </div>
+        <div id="award">
+          <img src="./Assets/Ribbon.png" style="top:0" class="animate-right rellax" data-rellax-speed="-0.2"></img>
+          
+          <section class="animate-left">
+            <div id="award-title">Mandelbrot Math Competition 15th Place Nationally</div>
+            Member of Fairview High School Mandelbrot Math Competition team, placing 15th place nationally, <a href="http://web.mandelbrot.org/dynamic/standings/?league=national&group=team&year=2017" target="_blank">2018</a>
+          </section>
+        </div>
+        <div id="award">
+          <img src="./Assets/Maa.png" style="bottom:0" class="animate-right rellax" data-rellax-speed="0.2"></img>
+          
+          <section class="animate-left">
+            <div id="award-title">American Invitational Mathematics Examination</div>
+            American Invitational Mathematics Examination (AIME) Qualifier (Score: 5), 2019
+          </section>
+        </div>
+      </div> -->
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~ -->
+    <!-- Projects starts here -->
+    <!-- ~~~~~~~~~~~~~~~~~ -->
+    <section id="projects">
+      <h2> Projects </h2>
+        <section id="projects-container">
+          <div id="button-container">
+          <a data-scroll="" href="https://cityhacks2022.devpost.com/" class="button" >
+            CityHacks
+          </a>
+          </div>
+        <!---
+        <div class="grid">
+
+          <div class="grid-item">
+          </div>
+          <div class="grid-item">
+          </div>
+          <div class="grid-item">
+          </div>
+          <div class="grid-item">
+          </div>
+
+        </div>
+      -->
+      </section>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Organizations starts here -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section id="organizations">
+      <h2> Organizations </h2>
+      <div id="button-container">
+      <a data-scroll="" href="https://www.youtube.com/channel/UCFJQ_5jMDAw0EdOYkCIR9wA" class="button" >
+        ACM
+      </a>
+      <a data-scroll="" href="https://ieee.org" class="button" >
+        IEEE
+      </a>
+      </div>
+      
+      <!--
+      <section id="columns">
+        <section id="leadership">
+          <div id="title" class="animate-left"> Leadership </div>
+          <div id="item"> 
+            <img src="./Assets/Physics.png" class="animate-left">
+            <div class="animate-right">
+            <b id="award-title">Fairview Physics Club Founder and Co-President</b>
+            Founder and co-President of Physics Club at Fairview High School, organizing competitions like the F=ma Physics Exam, Physics Bowl, and CERN Beamline for Schools competition (2017 – present)
+            </div>
+          </div>
+          <div id="item"> 
+            <img src="./Assets/ScienceBowl.png" class="animate-left">
+            <div class="animate-right">
+            <b id="award-title">Science Bowl Captain</b>
+            Team Captain of Science Bowl team at Fairview High School, achieving 2nd and 3rd place at Colorado Science Bowl competition (2017 & 2018 – present)
+            </div>
+          </div>
+          <div id="item"> 
+            <img src="./Assets/Cafe.png" class="animate-left">
+            <div class="animate-right">
+            <b id="award-title">Youth Leader of CU Science Discovery Teen Café</b>
+             Science Discovery Teen Café offers Boulder-area teens opportunities to meet and interact with scientists in a fun and informal setting designed to inspire conversation and interaction (2017 – present)
+            </div>
+          </div>
+        </section>
+        <section id="volunteer">
+          <div id="title" class="animate-right"> Volunteer </div>
+          <div id="item"> 
+            <img src="./Assets/CU.png" class="animate-right">
+            <div class="animate-left">
+            <b id="award-title">CU Science Discovery STEM Crew</b>
+            Assisted with CU Boulder STEM-related summer camps for children with CU Science Discovery STEM Crew for 80+ hours as a volunteer (May – August 2016)
+            </div>
+          </div>
+
+          <div id="item"> 
+            <img src="./Assets/Bohua.png" class="animate-right">
+            <div class="animate-left">
+            <b id="award-title">Bohua Chinese Institute’s Math Olympiad Team</b>
+            Founder and Organizer of the Bohua Chinese Institute’s Math Olympiad Team, organizing the Math Olympiad competition and teaching classes introducing important mathematical skills and problem solving skills to 30 elementary schoolers (September 2018 – present)
+            </div>
+          </div>
+          <div id="item"> 
+            <img src="./Assets/Tutor.png" class="animate-right">
+            <div class="animate-left">
+            <b id="award-title">Student Tutor</b>
+            Student Tutor at Fairview High School Student Achievement Center, mentoring students with needs in math, chemistry, physics, and French (September 2017 – Present)
+            </div>
+          </div>
+        </section>
+      </section>
+    -->
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Contact starts here -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section id="contact">
+      <h2> Contact </h2>
+      <section id="container">
+        <section id="description" class="animate-right">
+
+          <div id="button-container">
+            <a data-scroll="" href="mailto:physicist86.5@gmail.com" class="button" >
+              Email
+            </a>
+          </div>
+          
+          <div id="button-container">
+            <a data-scroll="" href="https://github.com/physicist86" class="button" >
+              Github
+            </a>
+          </div>
+        </section>
+        <!-- <section id="form" class="animate-left"> -->
+          <!-- <div id="error" class="message"></div> -->
+          <!-- <input placeholder="NAME" id="c_name"></input> -->
+          <!-- <input placeholder="EMAIL" id="c_email"></input> -->
+          <!-- <input placeholder="PHONE NUMBER (optional)" id="c_number"></input> -->
+          <!-- <input placeholder="SUBJECT" id="c_subject"></input> -->
+          <!-- <textarea placeholder="MESSAGE - Securely send me a message via this entry box here." id="c_message"></textarea> -->
+          <!-- <div class="recaptcha"></div> -->
+          <!-- <div id="success" class="message"></div>  -->
+          <!-- <a class="button" id="send"> -->
+            <!-- Send -->
+          <!-- </a>  -->
+          
+        </section>  
+      </section>
+    </section>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Footer starts here -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section id="footer">
+      <div id="top">
+        Thanks for visiting!
+        <a data-scroll="" href="#intro" class="button" >
+          Top ↑
+        </a>
+      </div>
+      <div id="bottom">
+        <div class="footer-nav"> <!-- the navigation links on desktop -->
+          <a data-scroll="" href="#about" class="link" >about</a>
+          <a data-scroll="" href="#experience" class="link">experience</a>
+          <a data-scroll="" href="#education" class="link">education</a>
+          <a data-scroll="" href="#awards" class="link">awards</a>
+          <a data-scroll="" href="#projects" class="link">projects</a>
+          <a data-scroll="" href="#organizations" class="link">organizations</a>
+          <a data-scroll="" href="#contact" class="link">contact</a>
+        </div>
+        <div class="socials"> <!-- the navigation links on desktop -->
+          <a href="https://www.linkedin.com/in/physicist86/"  target="_blank" class="social">
+            <img src="./Assets/LinkedinIcon.png">
+          </a>
+          <a href="https://instagram.com/_physicist90" target="_blank" class="social">
+            <img src="./Assets/instagram.png">
+          </a>
+          <a href="https://github.com/physicist86" target="_blank" class="social">
+            <img src="./Assets/GithubIcon.png">
+          </a>
+          <a href="mailto:physicist86.5@gmail.com" target="_blank" class="social">
+            <img src="./Assets/GmailIcon.png">
+          </a>
+        </div>
+        <div id="credit">
+           THIS WEBSITE WAS MADE BY
+           <a target="_blank" href="https://github.com/physicist86">ALEXANDER LE</a>
+           using HTML/CSS and JavaScript
+          <div id="copyright"> Copyright © 2022 Alexander Le. <br>All rights reserved. </div>
+        </div>
+      </div>
+      <!-- <img src="./Assets/brand.png" id="brand"> -->
+    </section>
+    <!-- Now that everything has been constructed, lets call the script -->
+    <script type="module" src="./Js/Main.js"></script>
+    <script>
+      // Accepts any class name
+      var rellax = new Rellax( ".rellax" );
+      $( ".grid" ).masonry({
+        itemSelector: ".grid-item",
+        gutter: 20 
+      });
+    </script>
+  </body>
+  <script>
+    document.onkeydown=function(e)
+    {
+      if(event.keyCode == 123){
+        return false;
+      }
+
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))
+      {
+        return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0))
+      {
+        return false;
+      }
+      if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))
+      {
+        return false;
+      }
+    }
+  </script>
+</html>
+

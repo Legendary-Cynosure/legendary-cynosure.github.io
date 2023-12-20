@@ -1,0 +1,19 @@
+{
+  "name": "alexanderle",
+  "version": "1.0.0",
+  "description": "<!--     README.md   Portfolio   Created by Alexander Le on 12/7/21.   Copyright © 2021 Alexander Le. All rights reserved.  --> My Personal Website =============",
+  "main": "Portfolio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ "
+  },
+  "author": "Alexander Le",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}

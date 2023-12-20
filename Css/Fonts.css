@@ -1,0 +1,50 @@
+/**
+ * Portfolio
+ * Fonts.css
+ * 
+ * @author Alexander Le <physicist86.5@gmail.com> 
+ * Created on 12/7/21
+ * Copyright © 2021 Alexander Le. All rights reserved.
+ *
+ * ##Description
+ * Load all the fonts used on this site.
+ */
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,900');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import url('https://fonts.google.com/specimen/Source+Sans+3');
+
+@import url('https://fonts.google.com/specimen/Fira+Code');
+
+@font-face {
+  font-family: Fira Code;
+  src: url("../Fonts/Firacode/FiraCode-Regular.ttf");
+}
+
+@font-face { 
+  font-family: Raleway; 
+  src: url( "../Fonts/Raleway/Raleway-Regular.ttf" ); 
+} 
+
+@font-face { 
+  font-family: Julius Sans One; 
+  src: url( "../Fonts/Julius_Sans_One/JuliusSansOne-Regular.ttf" ); 
+}  
+
+@font-face { 
+  font-family: Lato; 
+  src: url( "../Fonts/Lato/Lato-Regular.ttf" ); 
+}
+
+@font-face { 
+    font-family: 'Source Sans 3', sans-serif; 
+    src: url( "../Fonts/SS3/SourceSans3-Italic-VariableFont_wght.ttf" ); 
+}
+  
